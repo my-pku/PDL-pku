@@ -1,0 +1,14 @@
+#input
+	a1 of int;
+	a2 of int;
+#required
+	a of (int in [1,8])[1~8];
+	a[1]=a1;
+	a[2]=a2;
+	alldiff a;
+	x of int in [1,8];
+	y of int in [1,8];
+	x-y!=a[x]-a[y] : forall (x,y)(x!=y);
+	x-y!=a[y]-a[x] : forall (x,y)(x!=y);
+#output
+	a;
