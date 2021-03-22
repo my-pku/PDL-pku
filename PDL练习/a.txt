@@ -1,0 +1,10 @@
+#input
+	n of int in [1,1000];
+	a of (int  in [0,10000])[1~n];
+#required
+	x of int in [1,1000];
+	y of int in [1,1000];
+	x!=y;
+	a[x]=a[y];
+#output
+	a[x];
