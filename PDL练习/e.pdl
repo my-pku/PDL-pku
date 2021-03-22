@@ -1,0 +1,9 @@
+#input
+	n of int in [1,10];
+	dist of (int in [0,1000])[1~n][1~n];
+#required
+	city of (int in [1,n])[1~n];
+	alldiff city;
+#objective
+	minimize summation
+		[dist[city[i]][city[i+1]] : forall i (i <n and i>=1)];
