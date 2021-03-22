@@ -1,0 +1,12 @@
+#input 
+	n of int in [1,1000];
+	k of int in [0,20000];
+	a of (int in [0,10000])[1~1000];
+#required
+	x of int in [0,999];
+	y of int in [0,999];
+	a[x]+a[y]=k;
+	product_xy of int;
+	product_xy=a[x]*a[y];
+#output
+	product_xy;
